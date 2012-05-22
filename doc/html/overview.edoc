@@ -1,0 +1,19 @@
+@author Björn Berggren <email> 
+@author Marcus Enderskog <email>
+@author Simon Evertsson <email>
+@author Nanna Kjellin Bergqvist <email>
+
+@version 1.0
+@title MicroQ - State Representation
+@doc The Erlang part of the MicroQ project, a simulation of a microwave oven queue. The erlang part represents each student's state.
+
+ <dl> 	  
+   <dt><strong><span class="code">jcom</span></strong></dt> 
+      <dd>The communication module on the erlang side.</dd> 
+   <dt><strong><span class="code">state_switcher</span></strong></dt> 
+      <dd>The module which changes a student's state.</dd>
+   <dt><strong><span class="code">client_state</span></strong></dt> 
+      <dd>The actual representation of a student's state.</dd> 
+ </dl> 
+
+
