@@ -1,9 +1,5 @@
 package javacom;
 
-import java.io.IOException;
-import java.net.InetAddress;
-import java.util.HashMap;
-
 import com.ericsson.otp.erlang.*;
 
 public class Communicator implements Runnable {
@@ -117,7 +113,7 @@ public class Communicator implements Runnable {
 			sendMessage(new OtpErlangAtom(tID), atom, pid);
 			System.out.println("Ready message sent...");
 			try {
-				tuple = (OtpErlangTuple) mail.receive(15000);
+				tuple = (OtpErlangTuple) mail.receive(s.getWaitingTime());
 			}
 			catch (OtpErlangExit e) {
 					// TODO Auto-generated catch block

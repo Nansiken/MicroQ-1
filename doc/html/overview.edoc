@@ -13,7 +13,9 @@
    <dt><strong><span class="code">state_switcher</span></strong></dt> 
       <dd>The module which changes a student's state.</dd>
    <dt><strong><span class="code">client_state</span></strong></dt> 
-      <dd>The actual representation of a student's state.</dd> 
+      <dd>The actual representation of a student's state.</dd>
+   <dt><strong><span class="code">connection_check</span></strong></dt> 
+      <dd>Checks if the connection with another Erlang-node is still working.</dd>	  
  </dl> 
 
 

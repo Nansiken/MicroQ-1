@@ -1,6 +1,6 @@
 %% @author Simon Evertsson
 
-%% @doc The communication module which acts like a bridge between the state processes and Java.
+%% @doc A module which detects connection losses to another Erlang-node.
 
 -module(connection_check).
 -export([connection_lost/2]).
@@ -9,7 +9,7 @@
 -include_lib("eunit/include/eunit.hrl").
 
 
-%% @doc Detects if the connection with the Java Node has been lost, killing the erlang part and generates an error if that's the case
+%% @doc Detects if the connection with the other node has been lost. If the connection with J_Node has been lost it will kill the process Parent and then close the erlcom-node.
 connection_lost(J_Node, Parent) ->
 	Result = net_adm:ping(J_Node),
 		if 

@@ -1,2 +1,2 @@
 {packages,[]}.
-{modules,[client_state,jcom,state_switcher]}.
+{modules,[client_state,connection_check,jcom,state_switcher]}.
